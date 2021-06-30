@@ -4,18 +4,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Put Content Here">
-    <meta name="keywords" content="Put keywords here">
-    <meta name="author" content="Put your name here">
+    <meta name="description" content="Book Review Database">
+    <meta name="keywords" content="books, reading, fiction, 
+    non-fiction, genre, review">
+    <meta name="author" content="Ryan Ogilvy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Website Title goes here</title>
+    <title>Book Review Database</title>
     
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
-    <link rel="stylesheet" href="no_side.css"> 
+    <link rel="stylesheet" href="css/no_side.css"> 
     
 </head>
     
@@ -35,17 +36,21 @@
             </div>    <!-- / logo -->
         </a>
             
-            <h1>Website Name</h1>
+            <h1>Orchid reading</h1>
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
-        <div class="box nav">
-            <a href="index.html">Home</a> | 
-            <a href="page1.html">Page 1</a> | 
-            <a href="page2.html">Page 2</a> | 
-            <a href="page3.html">Page 3</a> | 
-            <a href="contact.html">Contact</a>
-        </div>    <!-- / nav -->        
+        <div class="box side">
+        <h2>Side Bar</h2>
+            <p>Items Go here</p>
+            <ul>
+                <li>Here</li>
+                <li>is</li>
+                <li>my</li>
+                <li>list</li>
+            </ul>
+
+        </div>    <!-- / side -->        
         
         <div class="box main">
             <h2>First Page heading</h2>
@@ -66,9 +71,12 @@
         
 
         <div class="box footer">
-            CC yourname 20XX
+            CC Ryan Ogilvy 2021
         </div>    <!-- / footer -->
     
     </div>  <!-- / wrapper  -->
     
 </body>        
+
+
+

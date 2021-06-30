@@ -10,13 +10,12 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner"
-        "nav"
-        "main"
-        "footer";
+        "banner banner"
+        "side main"
+        "footer footer";
         grid-gap: 4px;
     
 }
@@ -36,7 +35,7 @@ body {
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
+    background-color: #333333;  /* dark grey */
 }
 
 /* Set font on dark areas to white */
@@ -54,18 +53,17 @@ body {
 
 .banner {
     grid-area: banner;
+    background-color: #333333;
 }
 
-.nav {
-    grid-area: nav;
-    background-color: #DDD;  /* silver */
-    font-size: 150%;
-    text-align: center;
+.side {
+    grid-area: side;
+    background-color: #9CBDD3;  /* Blue */
 }
 
 .main {
     grid-area: main;
-    background-color: #EEE;  /* very pale grey */
+    background-color: #B9CFDF;  /* very pale grey */
     border: solid 1px #CCC;
 }
 
