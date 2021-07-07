@@ -106,6 +106,14 @@ a:hover{color: rgb(0, 0, 0);}    /* Black*/
 /* Sub Heading Formatting */
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
-    color: #593849; /* purple */
+    color: #000000; /* purple */
     font-weight: bold;
+}
+
+/* results box formatting */
+.results {
+    background-color: #9CBDD3;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 5px;
 }
