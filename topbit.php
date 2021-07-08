@@ -53,9 +53,37 @@
             <i>Type Part of the title / author if desired</i>
 
             <hr />
+            
+            <!-- Start of Title Search -->
 
-            Title Search<br />
-            Author Search<br />
+            <form method="post" action="title_search.php" enctype="multipart/form-data">
+
+                <input class="search" type="text" name="title" size="40" value="" 
+                required placeholder="Title..." />
+
+                <input class="submit" type="submit" name="find_title"
+                value="search" />
+
+            </form>
+
+            <!-- End of Title Search -->
+            <hr />
+            <hr />
+            <!-- Start of Author Search -->
+
+            <form method="post" action="author_search.php" enctype="multipart/form-data">
+
+                <input class="search" type="text" name="author" size="40" value="" 
+                required placeholder="author..." />
+
+                <input class="submit" type="submit" name="find_author"
+                value="search" />
+
+            </form>
+
+            <!-- End of Author Search -->
+            <hr />
+
             Genre Search<br />
             Rating Search
 

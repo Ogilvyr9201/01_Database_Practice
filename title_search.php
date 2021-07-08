@@ -1,16 +1,23 @@
 <?php 
     include "topbit.php"; /*  header php */
 
-$showall_sql="SELECT * FROM `book_reviews` ORDER BY `book_reviews`.`Title` ASC";
-$showall_query=mysqli_query($dbconnect, $showall_sql);
-$showall_rs=mysqli_fetch_assoc($showall_query);
-$count=mysqli_num_rows($showall_query);
+// if find button pushed
+if (isset($_POST['find_title']))
+
+{
+
+$title = $_POST['title'];
+
+$find_sql="SELECT * FROM `book_reviews` WHERE `Title` LIKE '%$title%' ORDER BY `Title` ASC";
+$find_query=mysqli_query($dbconnect, $find_sql);
+$find_rs=mysqli_fetch_assoc($find_query);
+$count=mysqli_num_rows($find_query);
 
 ?>
 
         
         <div class="box main">
-            <h2>All Items</h2>
+            <h2>Title Search</h2>
 
             <?php
             
@@ -41,19 +48,19 @@ $count=mysqli_num_rows($showall_query);
                 <div class="results">
 
                 <p>Title: <span class="sub_heading"><?php echo 
-                $showall_rs['Title']; ?></span>
+                $find_rs['Title']; ?></span>
                 </p> 
 
                 <p>Author: <span class="sub_heading"><?php echo 
-                $showall_rs['Author']; ?></span>
+                $find_rs['Author']; ?></span>
                 </p>
 
                 <p>Genre: <span class="sub_heading"><?php echo 
-                $showall_rs['Author']; ?></span>
+                $find_rs['Author']; ?></span>
                 </p>
 
                 <p>Rating: <span class="sub_heading"><?php 
-                    for ($x=0; $x < $showall_rs['Rating']; $x++)
+                    for ($x=0; $x < $find_rs['Rating']; $x++)
                     
                     {
                         echo "&#9733;";
@@ -66,7 +73,7 @@ $count=mysqli_num_rows($showall_query);
                 </p>
 
                 <p>
-                <?php echo $showall_rs['Review']; ?>
+                <?php echo $find_rs['Review']; ?>
 
                 </p>
 
@@ -79,12 +86,14 @@ $count=mysqli_num_rows($showall_query);
 
                 } // end of 'do'
 
-                while($showall_rs=mysqli_fetch_assoc($showall_query));
+                while($find_rs=mysqli_fetch_assoc($find_query));
 
             } // end else
 
             // if there are results, display them
             
+            } // end 'isset'
+
             ?>
 
         </div>    <!-- / main -->
