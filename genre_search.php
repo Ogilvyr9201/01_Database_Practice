@@ -2,15 +2,16 @@
     include "topbit.php"; /*  header php */
 
 // if find button pushed
-if (isset($_POST['find_title']))
+if (isset($_POST['find_genre']))
 
 {
 
-// retieves Title and sanatises it
-$title=test_input(mysqli_real_escape_string($dbconnect,
-$_POST['title']));
+// retieves genre and sanatises it
+$genre=test_input(mysqli_real_escape_string($dbconnect,
+$_POST['genre']));
+    
 
-$find_sql="SELECT * FROM `book_reviews` WHERE `Title` LIKE '%$title%' ORDER BY `Title` ASC";
+$find_sql="SELECT * FROM `book_reviews` WHERE `genre` LIKE '%$genre%' ORDER BY `genre` ASC";
 $find_query=mysqli_query($dbconnect, $find_sql);
 $find_rs=mysqli_fetch_assoc($find_query);
 $count=mysqli_num_rows($find_query);
@@ -19,7 +20,7 @@ $count=mysqli_num_rows($find_query);
 
         
         <div class="box main">
-            <h2>Title Search</h2>
+            <h2>genre Search</h2>
 
             <?php
             

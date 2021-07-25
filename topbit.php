@@ -6,6 +6,7 @@
 
     session_start();
     include("config.php");
+    include("functions.php");  // include data sanitising...
 
     // Connect to database
 
@@ -83,8 +84,21 @@
 
             <!-- End of Author Search -->
             <hr />
+            <hr />
+            <!-- Start of Genre Search -->
 
-            Genre Search<br />
+            <form method="post" action="genre_search.php" enctype="multipart/form-data">
+
+                <input class="search" type="text" name="genre" size="40" value="" 
+                required placeholder="genre..." />
+
+                <input class="submit" type="submit" name="find_genre"
+                value="search" />
+
+            </form>
+
+            <!-- End of genre Search -->
+            <hr />
             Rating Search
 
         </div>    <!-- / side -->      

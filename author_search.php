@@ -6,7 +6,10 @@ if (isset($_POST['find_author']))
 
 {
 
-$author = $_POST['author'];
+// retieves Author and sanatises it
+$author=test_input(mysqli_real_escape_string($dbconnect,
+$_POST['author']));
+    
 
 $find_sql="SELECT * FROM `book_reviews` WHERE `Author` LIKE '%$author%' ORDER BY `Author` ASC";
 $find_query=mysqli_query($dbconnect, $find_sql);
@@ -17,7 +20,7 @@ $count=mysqli_num_rows($find_query);
 
         
         <div class="box main">
-            <h2>Title Search</h2>
+            <h2>Author Search</h2>
 
             <?php
             
@@ -56,7 +59,7 @@ $count=mysqli_num_rows($find_query);
                 </p>
 
                 <p>Genre: <span class="sub_heading"><?php echo 
-                $find_rs['Author']; ?></span>
+                $find_rs['Genre']; ?></span>
                 </p>
 
                 <p>Rating: <span class="sub_heading"><?php 

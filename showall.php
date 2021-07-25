@@ -49,7 +49,7 @@ $count=mysqli_num_rows($showall_query);
                 </p>
 
                 <p>Genre: <span class="sub_heading"><?php echo 
-                $showall_rs['Author']; ?></span>
+                $showall_rs['Genre']; ?></span>
                 </p>
 
                 <p>Rating: <span class="sub_heading"><?php 
