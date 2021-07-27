@@ -53,7 +53,7 @@
         <h2>Search | <a class="side" href="showall.php">Show All</a></h2>
             <i>Type Part of the title / author if desired</i>
 
-            <hr />
+            <hr class="line"/>
             
             <!-- Start of Title Search -->
 
@@ -69,7 +69,7 @@
 
             <!-- End of Title Search -->
             <hr />
-            <hr />
+
             <!-- Start of Author Search -->
 
             <form method="post" action="author_search.php" enctype="multipart/form-data">
@@ -83,8 +83,8 @@
             </form>
 
             <!-- End of Author Search -->
-            <hr />
-            <hr />
+            <hr class="line"/>
+
             <!-- Start of Genre Search -->
 
             <form method="post" action="genre_search.php" enctype="multipart/form-data">
@@ -98,23 +98,23 @@
             </form>
 
             <!-- End of genre Search -->
-            <hr />
-            <hr />
+            <hr class="line"/>
+
             <!-- Start of Rating Search -->
 
             <form method="post" action="rating_search.php"
             enctype="multipart/form-data">
 
                 <select class="half_width" name="amount">
-                    <option value="exactly" selected>Exactly...</option>
-                    <option value="more">At least...</option>
+                    <option value="exactly">Exactly...</option>
+                    <option value="more" selected>At least...</option>
                     <option value="less">At most...</option>
                 </select>
 
                 <select class="half_width" name="stars">
                     <option value=1>&#9733;</option>
                     <option value=2>&#9733;&#9733;</option>
-                    <option value=3>&#9733;&#9733;&#9733;</option>
+                    <option value=3 selected>&#9733;&#9733;&#9733;</option>
                     <option value=4>&#9733;&#9733;&#9733;&#9733;</option>
                     <option value=5>&#9733;&#9733;&#9733;&#9733;&#9733;</option>
                 
@@ -124,7 +124,7 @@
                     value="Search" />
 
             <!-- End of Rating Search -->
-            <hr />
+            <hr class="line"/>
 
 
         </div>    <!-- / side -->      

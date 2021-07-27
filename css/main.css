@@ -132,3 +132,9 @@ a:hover{color: rgb(0, 0, 0);}    /* Black*/
 .search {
     width: 200px;
 }
+
+/* line colour */
+.line {
+    color: #0077ff;
+    border: 1px solid #0077ff;
+}

@@ -13,20 +13,31 @@ $stars=test_input(mysqli_real_escape_string($dbconnect, $_POST['stars']));
 if ($amount=="exactly")
 
 {
-    $findall_sql="SELECT * FROM `book_reviews` WHERE `Author` 
-    LIKE '%$author%' ORDER BY `Author` ASC";  
+    $find_sql="SELECT * FROM `book_reviews` WHERE `Rating` = $stars 
+    ORDER BY `Title` ASC";  
 }
 
-$findall_sql="SELECT * FROM `book_reviews` WHERE `Author` LIKE '%$author%' ORDER BY `Author` ASC";
-$findall_query=mysqli_query($dbconnect, $findall_sql);
-$findall_rs=mysqli_fetch_assoc($findall_query);
-$count=mysqli_num_rows($findall_query);
+elseif ($amount=="less")
+
+{
+    $find_sql="SELECT * FROM `book_reviews` WHERE `Rating` <= $stars 
+    ORDER BY `Title` ASC";
+}
+
+else {
+    $find_sql="SELECT * FROM `book_reviews` WHERE `Rating` >= $stars 
+    ORDER BY `Title` ASC";
+}
+
+$find_query=mysqli_query($dbconnect, $find_sql);
+$find_rs=mysqli_fetch_assoc($find_query);
+$count=mysqli_num_rows($find_query);
 
 ?>
 
         
         <div class="box main">
-            <h2>Author Search</h2>
+            <h2>Rating Search</h2>
 
             <?php
             
