@@ -85,6 +85,8 @@ a:link{color: #0077ff;} /* Blue */
 a:visited{color: #111177;} /* dark blue */
 a:hover{color: rgb(0, 0, 0);}    /* Black*/
 
+a.title {color: white;}
+
 
 /* Contact Form Styling */
 .contact {
@@ -135,6 +137,12 @@ a:hover{color: rgb(0, 0, 0);}    /* Black*/
 
 /* line colour */
 .line {
-    color: #0077ff;
-    border: 1px solid #0077ff;
+    color: #B9CFDF;
+    border: 1px solid #B9CFDF;
 }
+
+/* no border */
+.no-border {
+    border-width: 0ch;
+}
+

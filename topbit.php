@@ -45,7 +45,7 @@
     <div class="wrapper">
         
         <div class="box banner">
-            <h1>Orchid reading</h1>
+            <h1> <a href="index.php" class="title">Orchid reading</a></h1>
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
@@ -100,6 +100,9 @@
             <!-- End of genre Search -->
             <hr class="line"/>
 
+            <i>Please use the drop down box to select Ratings</i>
+
+            <hr class="line"/>
             <!-- Start of Rating Search -->
 
             <form method="post" action="rating_search.php"
