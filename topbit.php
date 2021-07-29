@@ -45,7 +45,15 @@
     <div class="wrapper">
         
         <div class="box banner">
-            <h1> <a href="index.php" class="title">Orchid reading</a></h1>
+            <!-- logo image linking to home page goes here -->
+            <a href="index.php">
+                <div class="box logo"  title="Logo - Click here to go to the Home Page">
+                <img class="img-circle" src="images/orchid-reading-0123.png" width="125" height="125" alt="generic logo" />
+                
+                </div>    <!-- / logo -->
+            </a>
+
+            <h1><a href="index.php" class="title">Orchid reading</a></h1>
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
