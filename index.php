@@ -17,6 +17,10 @@
             <a href="contact.php"> Contact me </a> 
         </p>
 
+        <p>
+            <img class="photo" src="images\book_logo_image_lol.jpg" width="500" height="350" alt="generic photo" />
+        </p>
+
     </div>    <!-- / main -->
             
 <?php 

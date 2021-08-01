@@ -37,6 +37,7 @@
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css"
     
 </head>
     
@@ -70,8 +71,8 @@
                 <input class="search" type="text" name="title" size="40" value="" 
                 required placeholder="Title..." />
 
-                <input class="submit" type="submit" name="find_title"
-                value="search" />
+                <input class="submit-wide" type="submit" name="find_title"
+                value="&#xf002" />
 
             </form>
 
@@ -85,8 +86,8 @@
                 <input class="search" type="text" name="author" size="40" value="" 
                 required placeholder="author..." />
 
-                <input class="submit" type="submit" name="find_author"
-                value="search" />
+                <input class="submit-wide" type="submit" name="find_author"
+                value="&#xf002" />
 
             </form>
 
@@ -100,8 +101,8 @@
                 <input class="search" type="text" name="genre" size="40" value="" 
                 required placeholder="genre..." />
 
-                <input class="submit" type="submit" name="find_genre"
-                value="search" />
+                <input class="submit-wide" type="submit" name="find_genre"
+                value="&#xf002" />
 
             </form>
 
@@ -132,7 +133,7 @@
                 </select>
 
                     <input type="submit" class="submit" name="find_rating"
-                    value="Search" />
+                    value="&#xf002" />
 
             <!-- End of Rating Search -->
             <hr class="line"/>
