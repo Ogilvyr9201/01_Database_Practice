@@ -37,7 +37,7 @@
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/main.css"> 
-    <link rel="stylesheet" href="css/font-awesome.min.css"
+    <link rel="stylesheet" href="css/font-awesome.min.css" /> 
     
 </head>
     
@@ -76,8 +76,8 @@
 
             </form>
 
-            <!-- End of Title Search -->
-            <hr />
+            <!-- End of Title Search -->            
+            <hr class="line"/>
 
             <!-- Start of Author Search -->
 
@@ -132,7 +132,7 @@
                 
                 </select>
 
-                    <input type="submit" class="submit" name="find_rating"
+                    <input type="submit" class="submit-wide" name="find_rating"
                     value="&#xf002" />
 
             <!-- End of Rating Search -->

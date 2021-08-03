@@ -3,18 +3,18 @@
 ?>
      
     <div class="box main">
-        <h2>First Page heading</h2>
+        <h2>Home Page</h2>
         
         <p>
-            Reading is cool lol
+            reading is one of lifes greatest pleasues. Plaese search the database by using the search tools in the side bar. Hopefully you will find somethiing that appeals.
         </p>
         
         <p>
-            Do a flip
+
         </p>
-        
+            I must confess to having a love for Sci Fi, so many of the books that I have reviewedare from that genre. The plan is to add more reviews to this site as time allows.
         <p>
-            <a href="contact.php"> Contact me </a> 
+            If youd like to suggest a book for review please feel free to get in touch here --> <a href="contact.php"> Contact Page</a> 
         </p>
 
         <p>
